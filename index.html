@@ -8,6 +8,9 @@
         function cambiaImagen(){
             var producto=document.getElementById("producto");
             var imagen = document.getElementById("imagen");
+            if(producto.value == ""){
+                imagen.src = ""
+            }
             if(producto.value == "ordenador"){
                 imagen.src = "./images/sobremesa.jpg"
             }
